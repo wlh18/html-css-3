@@ -6,11 +6,11 @@ In this lecture we discuss media queries and animations.
 
 Responsive design is the process of building an application's user interface (UI) to dynamically adjust based on the size of the device being used to access it.
 
-Older websites, were not designed with responsive design principles in mind, and this can lead to undesirable user experiences. Take a look at https://www.spacejam.com/archive/spacejam/movie/jam.htm for an example.
+Older websites were not designed with responsive design principles in mind, and this has lead to undesirable user experiences. Take a look at https://www.spacejam.com/archive/spacejam/movie/jam.htm for an example.
 
 Nowadays, it is standard practice to ensure that websites are responsive. Some examples of responsive designs can be found here: https://www.awwwards.com/50-examples-of-responsive-web-design.html. 
 
-The reason responsive design is important is because increasing numbers of users are consuming the internet via mobile devices or tablets. There are ~1.2 billion web users world wide, and ~48% of them primarily use the internet on their mobile device.
+The reason responsive design is important is because increasing numbers of users are consuming the internet via mobile devices or tablets. There are ~1.2 billion web users world wide, and ~48% of them primarily use the internet on their mobile device. Moreover, being capable of designing responsive sites is a requirement for any front-end developer position.
 
 When building your application, there are three main devices to develop for. `mobile`, `tablet`, and `desktop`.
 
@@ -36,7 +36,7 @@ In CSS, we can use `media queries` to help create a `responsive design`.
 
 A `media query` is a set of CSS rules that will dynamicaly change how our elements are being displayed to the screen based on the view port size of the device being used to access the page.
 
-The syntax for writing a media query looks like the following.
+The syntax for writing a media query looks like the following:
 
 ```css
 @media (max-width: 500px) {
@@ -47,15 +47,14 @@ The syntax for writing a media query looks like the following.
 }
 ```
 
-We will define that it is a media query by using the `@media` statement. In the parenthesis, we will specify what width of the view port these sizes will be applied to. Inside the curly braces, we select the styles that will be applied when the condition inside the parenthsis is met.
+Media queries are defined in CSS by using the `@media` statement. In the parentheses, we can specify the dimensions of the view port that our styles will apply to. The values passed into the parenthesis are referred to as a `break point`. Typically, break points are set with a `min-width` or `max-width` value. Inside the curly braces, we style normally. 
 
-The value pased into the parenthesis is what will define our `break point`. We can use the break point to be specific as to when this styling gets applied. We will usually set a break point with a `min-width` or `max-width` value.
 
 ![break points](images/breakpoints.png)
 
-### Min Width
+### Min-Width
 
-Min width is the value we can use to declare that this is the lowest point of screen size that the styles will be applied. This means that the styles will be applied when the view port width is higher than the `min-width` value.
+Min-width is the value used to declare the minimum width of screen size that the styling block will be applied to. This means that the styles will be applied when the view port width is higher than the `min-width` value.
  
 ```css
 @media (min-width: 500px) {
@@ -66,9 +65,9 @@ Min width is the value we can use to declare that this is the lowest point of sc
 }
 ```
 
-### Max Width
+### Max-Width
 
-Max width is the value we can use to declare what the highest point of the screen width is to apply the styling. This means that the styles will be applied if the view port width is smaller than the max width value.
+Max-width is the value used to declare the maximum point of screen width that the styling block would apply to. This means that the styles will be applied if the view port width is smaller than the `max-width` value.
 
 ```css
 @media (max-width: 500px) {
@@ -79,7 +78,7 @@ Max width is the value we can use to declare what the highest point of the scree
 }
 ```
 
-You can use these interchangeably, but it's best just to stick with one or the other to make your code more clear.
+You can use `max-width` or `min-width` interchangeably, but it's best to stick with one or the other to make your code clearer.
 
 ## Animations
 
