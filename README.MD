@@ -1,40 +1,40 @@
 # HTML CSS THREE
 
-In this lecture we discuss media queries, and animations.
+In this lecture we discuss media queries and animations.
 
 ## Responsive Design
 
-Responsive design is the process of building an applications user interface (UI) to adjust and be dynamic based on the size of the device being used to access it.
+Responsive design is the process of building an application's user interface (UI) to dynamically adjust based on the size of the device being used to access it.
 
-In older websites, they were not created with responseive design. If it scaled down to the viewport size of an iPhone, they would terrible. Take a look at https://www.spacejam.com/archive/spacejam/movie/jam.htm for an example.
+Older websites, were not designed with responsive design principles in mind, and this can lead to undesirable user experiences. Take a look at https://www.spacejam.com/archive/spacejam/movie/jam.htm for an example.
 
-In newer websites, it is now a standard to make sure that your site is mobile responsive and looks and feels clean. A great example of this would be this watch website https://tinkerwatches.com/.
+Nowadays, it is standard practice to ensure that websites are responsive. Some examples of responsive designs can be found here: https://www.awwwards.com/50-examples-of-responsive-web-design.html. 
 
-The reason it's so important that we need to make sure our sites are mobile responsive is becauase more people are consuming the internet on mobile devices or tablets. There are 1.2 billion web users world wide and 48% of them primarily use the internet on their mobile device.
+The reason responsive design is important is because increasing numbers of users are consuming the internet via mobile devices or tablets. There are ~1.2 billion web users world wide, and ~48% of them primarily use the internet on their mobile device.
 
-When bulding your application there are three platforms we want to keep in mind that we are developing for. `mobile`, `tablet`, and `desktop`.
+When building your application, there are three main devices to develop for. `mobile`, `tablet`, and `desktop`.
 
 ![resposive design](images/responsive.jpg)
 
 ### Extraction
 
-The `extraction` process of building an application is where to start from `desktop` and make your way down to smaller devices.
+The `extraction` design process of building an application is when developers start from `desktop` design, and then extract features until the design fits smaller devices.
 
-This process usually leads to a killer desktop application that is very rich with features. The problem that this introduces is that when you need to start extracting your features to a mobile view, it can be very difficult to include all of the features due to lack of room on the device viewport and you'll application loses it's strong feel and the mobile view is just an "after thought".
+The extraction design process often results in a desktop application that is rich with features, and a mobile application that feels like an ineffective afterthought. This is because it can be difficult to include all of the features from the desktop view when working with a mobile sized viewport. With extraction design, mobile views can be left feeling either cluttered and clunky, or less usable and effective than the desktop design.  
 
 ### Enhancement
 
-The `enhancement` process is where you decide what core features should exist on the `mobile` view and then make your way up to the `desktop` size.
+The `enhancement` design process is when developers begin by deciding the core features and layout for the `mobile` view, and then "enhance" the application in order to fill out the  `desktop` design.
 
-This will allow you to add features into your app as you scale up with the view port size. This is also known as `mobile first` development. The app will now feel like a solid app and not just an "after thought".
+This will allow you to add features into your app as you scale up with the view port size. This is also known as `mobile first` development. This process more reliably results in a robust mobile view and an equally effective desktop design. 
 
-It's easier to scale up then it is to reduce down.
+In short, it's easier to scale up than it is to scale down.
 
 ## Media Queries
 
 In CSS, we can use `media queries` to help create a `responsive design`.
 
-A `media query` is a set of CSS rules that will dynamicaly change how our elements are being displayed to the screen based on the view port size of the device being used from the user that is accessing our page.
+A `media query` is a set of CSS rules that will dynamicaly change how our elements are being displayed to the screen based on the view port size of the device being used to access the page.
 
 The syntax for writing a media query looks like the following.
 
