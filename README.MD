@@ -34,7 +34,7 @@ In short, it's easier to scale up than it is to scale down.
 
 In CSS, we can use `media queries` to help create a `responsive design`.
 
-A `media query` is a set of CSS rules that will dynamicaly change how our elements are being displayed to the screen based on the view port size of the device being used to access the page.
+A `media query` is a set of CSS rules that will apply to devices based on the viewport size of the device being used to access the page.
 
 The syntax for writing a media query looks like the following:
 
@@ -47,7 +47,7 @@ The syntax for writing a media query looks like the following:
 }
 ```
 
-Media queries are defined in CSS by using the `@media` statement. In the parentheses, we can specify the dimensions of the view port that our styles will apply to. The values passed into the parenthesis are referred to as a `break point`. Typically, break points are set with a `min-width` or `max-width` value. Inside the curly braces, we style normally. 
+Media queries are defined in CSS by using the `@media` statement. In the parentheses, we can specify the dimensions of the view port that our styles will apply to. The value passed into the parentheses can be referred to as a `break point`. Typically, break points are set with a `min-width` or `max-width` value. Inside the curly braces, we style normally. 
 
 
 ![break points](images/breakpoints.png)
@@ -78,21 +78,17 @@ Max-width is the value used to declare the maximum point of screen width that th
 }
 ```
 
-You can use `max-width` or `min-width` interchangeably, but it's best to stick with one or the other to make your code clearer.
+You can use `max-width` or `min-width` interchangeably, but it's best to stick with one or the other to make your code more clear.
 
 ## Animations
 
-Animations will transform elements on our web page. This is an excellent way to pull in a users attention and really attract them to our site, if they are done right.
+Animations are used to dynamically animate elements on our web page. When utilized well, animations enrich the user experience and keep users on a site. Check out https://www.theglyph.studio/#home for an example of a site that utilizes animations well. When utilized poorly, animations can be distracting and unpleasant, and can push users away. Take a look at https://www.lingscars.com/ for an example of what poorly utilized animations can look like.
 
-If they are not done right, it can be extremely distracting and unpleasent. Take a look at this site for a good example of what bad animations look like https://www.lingscars.com/.
-
-On the other hand, if animations are done right it will really make your site stand out and really pull in the users attention to your page. This site does an insanely good job at what killer animations can do https://www.theglyph.studio/#home.
-
-One way we can create animations is by using a `keyframe`.
+There are a multitude of ways to achieve an animation effect on a webpage. One way animations can be created is by using `keyframes` in our CSS.
 
 ### Keyframes
 
-Keyframes are a great way that we can be specific when creating some sort of animation. we will use the `@` sign to declare a keyframe with a name to reference it as.
+To reiterate, keyframes are one method that can be used to create an animation via CSS. Keyframes are declared with `@keyframes`, followed by a name that can be used to reference the keyframe. The @keyframes CSS "at-rule" controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. 
 
 ```css
 @keyframes spin {
@@ -100,7 +96,7 @@ Keyframes are a great way that we can be specific when creating some sort of ani
 }
 ```
 
-There are multiple ways that we can apply styles using a key frame. The first is `from` and `to`. This is where we can define a set of style rules from the start to the finish.
+There are a couple ways that we can apply styles using a keyframe. One way is by using `from` and `to`. `from` and `to` can be used to define a set of style rules that specify the start and end state of an element in CSS.
 
 ```css
 @keyframes spin {
@@ -113,7 +109,7 @@ There are multiple ways that we can apply styles using a key frame. The first is
 }
 ```
 
-Then next way is using percentages inside of the animation, so we can be even more specific about how the animation will work.
+Another way is by using percentages inside of the animation, which enables greater specificity and control over how the animation.
 
 ```css
 @keyframes spin {
