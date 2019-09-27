@@ -84,7 +84,7 @@ You can use `max-width` or `min-width` interchangeably, but it's best to stick w
 
 Animations are used to dynamically animate elements on our web page. When utilized well, animations enrich the user experience and keep users on a site. Check out https://www.theglyph.studio/#home for an example of a site that utilizes animations well. When utilized poorly, animations can be distracting and unpleasant, and can push users away. Take a look at https://www.lingscars.com/ for an example of what poorly utilized animations can look like.
 
-There are a multitude of ways to achieve an animation effect on a webpage. One way animations can be created is by using `keyframes` in our CSS.
+There are a multitude of ways to achieve an animation effect on a webpage, including scripting through javascript or even other languages. For this guide, we'll focus on two CSS techniques for creating animations. For a more comprehensive overview of CSS animations, check out MDN's Documentation here: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
 
 ### Keyframes
 
@@ -96,7 +96,7 @@ To reiterate, keyframes are one method that can be used to create an animation v
 }
 ```
 
-There are a couple ways that we can apply styles using a keyframe. One way is by using `from` and `to`. `from` and `to` can be used to define a set of style rules that specify the start and end state of an element in CSS.
+There are a couple ways that we can apply style waypoints using a keyframe. One way is by using `from` and `to`. `from` and `to` can be used to define a set of style rules that specify the start and end state of an element in CSS.
 
 ```css
 @keyframes spin {
@@ -109,7 +109,7 @@ There are a couple ways that we can apply styles using a keyframe. One way is by
 }
 ```
 
-Another way is by using percentages inside of the animation, which enables greater specificity and control over how the animation.
+Another way to specify waypoints is by using percentages inside of the animation, which enables greater specificity and control over how the animation will act.
 
 ```css
 @keyframes spin {
@@ -124,8 +124,7 @@ Another way is by using percentages inside of the animation, which enables great
     }
 }
 ```
-
-Now that we have created the animation, we now need to tell an element to use it.
+After creating a keyframe animation, the keyframe needs to be applied to the desired selector. 
 
 ```css
 .square {
@@ -145,9 +144,9 @@ Now that we have created the animation, we now need to tell an element to use it
 }
 ```
 
-Notice how these animations are always. We can set it up so that the animation will fire when a specific event like a click happens.
+One thing to note is that animation begins automatically when elements are loaded once the animation has been applied via CSS. Would you always want your animations to auto-fire? Fortunately, it is possible to write code so that animations only occur when specific events occur, like an onClick. 
 
-We can conditionally add CSS classes to add the animation. We need to add all of the animation properties into it's own class.
+To accomplish this, we can create a CSS class, like the one pictured below, that is designed to apply the desired animation properties to an element, but hasn't yet been appied to any specific element. 
 
 ```css
 .square-spin {
@@ -159,7 +158,7 @@ We can conditionally add CSS classes to add the animation. We need to add all of
 }
 ```
 
-Then we will create state on our component and write a method that will change the value on state from true to false, or false to true. Then we will conditionally add the class to the element depending on what state is.
+Next, we can create state on our component and create a method that will toggle the value on state from true to false. Then we can conditionally add the class to the element depending on what our state is.
 
 ```js
 export default class App extends Component {
@@ -193,11 +192,15 @@ export default class App extends Component {
 };
 ```
 
+Keep in mind that this is just one way of controlling an animation for an element in React. 
+
+For more information on using Keyframes and controlling animations with the animation property, look here: https://developer.mozilla.org/en-US/docs/Web/CSS/animation. 
+
 ### Transitions
 
-Transitions are another way we can animate our elements. This time, the animation will just be a simple transition that will allow us to create smooth transitions.
+Transitions are another way to animate elements. To use transitions, all we need to do is use the `transition` property in our CSS styling blocks. CSS Transitions are a module of CSS that lets developers create gradual transitions between the values of specific CSS properties. The behavior of these transitions can be controlled by specifying their timing function, duration, and other attributes.
 
-All we need to do is use the `transition` property on our css elements. We will just define how long we want to the transition to happen.
+In the following example, we apply a transition property to create a simple hover effect, and specify a duration for the animation cycle. 
 
 ```css
 /* Transition Circle */
@@ -216,4 +219,8 @@ All we need to do is use the `transition` property on our css elements. We will 
 }
 ```
 
-This will allow us to create simple animations on events such as a hover.
+For more information on CSS Transitions, check out MDN's Guide: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+
+Additionally, if you're ever struggling with creating a desired effect via CSS, try searching for results from https://css-tricks.com/. It's a fantastic resource for not only CSS, but also HTML, JS, JQuery, and many other front-end technologies. 
+
+Finally, remember that there are a multitude of means of achieving animation effects on a webpage, including scripting with javascript, or relying on libraries and frameworks like React-Spring, React-Motion, or GreenSock. In this guide, we simply focused on using transitions and keyframes within CSS to achieve animation effects. 
