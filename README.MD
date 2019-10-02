@@ -203,8 +203,8 @@ Transitions are another way to animate elements. To use transitions, all we need
 In the following example, we apply a transition property to create a simple hover effect, and specify a duration for the animation cycle. 
 
 ```css
-/* Transition Circle */
-.transition-circle {
+
+.transition-element {
     height: 50px;
     width: 50px;
     margin: 25px auto;
@@ -213,7 +213,7 @@ In the following example, we apply a transition property to create a simple hove
     transition: .2s
 }
 
-.transition-circle:hover {
+.transition-element:hover {
     transform: scale(1.1);
     border-radius: 50%;
 }
