@@ -6,7 +6,7 @@ In this lecture we discuss media queries and animations.
 
 Responsive design is the process of building an application's user interface (UI) to dynamically adjust based on the size of the device being used to access it.
 
-Older websites were not designed with responsive design principles in mind, and this has lead to undesirable user experiences. Take a look at https://www.spacejam.com/archive/spacejam/movie/jam.htm for an example.
+Older websites were not designed with responsive design principles in mind, and this has lead to undesirable user experiences. Take a look at https://www.spacejam.com/archive/spacejam/movie/jam.htm for an example of an unresponsive website.
 
 Nowadays, it is standard practice to ensure that websites are responsive. Some examples of responsive designs can be found here: https://www.awwwards.com/50-examples-of-responsive-web-design.html. 
 
