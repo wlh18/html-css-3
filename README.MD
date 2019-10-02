@@ -26,7 +26,7 @@ The extraction design process often results in a desktop application that is ric
 
 The **enhancement** design process is when developers begin by deciding the core features and layout for the mobile view, and then "enhance" the application in order to fill out the desktop design.
 
-This will allow you to add features into your app as you scale up with the view port size. This is also known as `mobile first` development. This process more reliably results in a robust mobile view and an equally effective desktop design. 
+This will allow you to add features into your app as you scale up with the view port size. This is also known as "mobile first" development. This process more reliably results in a robust mobile view and an equally effective desktop design. 
 
 In short, it's easier to scale up than it is to scale down.
 
