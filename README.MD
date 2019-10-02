@@ -180,7 +180,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <div id={
+        <div className={
           this.state.spinning ?
           'square square-spin'
           :
@@ -204,7 +204,7 @@ In the following example, we apply a transition property to create a simple hove
 
 ```css
 
-#transition-element {
+.transition-element {
     height: 50px;
     width: 50px;
     margin: 25px auto;
@@ -213,7 +213,7 @@ In the following example, we apply a transition property to create a simple hove
     transition: .2s
 }
 
-#transition-element:hover {
+.transition-element:hover {
     transform: scale(1.1);
     border-radius: 50%;
 }
