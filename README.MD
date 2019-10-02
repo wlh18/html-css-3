@@ -41,7 +41,7 @@ The syntax for writing a media query looks like the following:
 ```css
 @media (max-width: 500px) {
     /* New Styles To Apply Based On Width */
-    .navbar {
+    #navbar {
         background: tomato;
     }
 }
@@ -59,7 +59,7 @@ Min-width is the value used to declare the minimum width of screen size that the
 ```css
 @media (min-width: 500px) {
     /* Styles will only be applied when view port width is 500px and above */
-    .navbar {
+    #navbar {
         background: orange;
     }
 }
@@ -72,7 +72,7 @@ Max-width is the value used to declare the maximum point of screen width that th
 ```css
 @media (max-width: 500px) {
     /* Styles will only be applied when view port width is 500px and lower */
-    .navbar {
+    #navbar {
         background: orange;
     }
 }
@@ -127,7 +127,7 @@ Another way to specify waypoints is by using percentages inside of the animation
 After creating a keyframe animation, the keyframe needs to be applied to the desired selector. 
 
 ```css
-.square {
+#square {
     height: 75px;
     width: 75px;
     background: peachpuff;
@@ -149,7 +149,7 @@ One thing to note is that animation begins automatically when elements are loade
 To accomplish this, we can create a CSS class, like the one pictured below, that is designed to apply the desired animation properties to an element, but hasn't yet been appied to any specific element. 
 
 ```css
-.square-spin {
+#square-spin {
     animation-name: spin;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -180,7 +180,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <div className={
+        <div id={
           this.state.spinning ?
           'square square-spin'
           :
@@ -204,7 +204,7 @@ In the following example, we apply a transition property to create a simple hove
 
 ```css
 
-.transition-element {
+#transition-element {
     height: 50px;
     width: 50px;
     margin: 25px auto;
@@ -213,7 +213,7 @@ In the following example, we apply a transition property to create a simple hove
     transition: .2s
 }
 
-.transition-element:hover {
+#transition-element:hover {
     transform: scale(1.1);
     border-radius: 50%;
 }
