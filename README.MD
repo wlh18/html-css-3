@@ -12,19 +12,19 @@ Nowadays, it is standard practice to ensure that websites are responsive. Some e
 
 The reason responsive design is important is because increasing numbers of users are consuming the internet via mobile devices or tablets. In 2017, there were an estimated 3.5 billion web users world wide, and around 2 billion of them exclusively use the internet on mobile devices. Nowadays, it is a requirement in any front-end developer position to be capable of designing responsive websites.
 
-When building your application, there are three main devices to develop for. `mobile`, `tablet`, and `desktop`.
+When building your application, there are three main devices to develop for. **mobile**, **tablet**, and **desktop**.
 
 ![resposive design](images/responsive.jpg)
 
 ### Extraction
 
-The `extraction` design process of building an application is when developers start from `desktop` design, and then extract features until the design fits smaller devices.
+The **extraction** design process of building an application is when developers start from desktop design, and then "extract" features until the design fits smaller devices.
 
 The extraction design process often results in a desktop application that is rich with features, and a mobile application that feels like an ineffective afterthought. This is because it can be difficult to include all of the features from the desktop view when working with a mobile sized viewport. With extraction design, mobile views can be left feeling either cluttered and clunky, or less usable and effective than the desktop design.  
 
 ### Enhancement
 
-The `enhancement` design process is when developers begin by deciding the core features and layout for the `mobile` view, and then "enhance" the application in order to fill out the  `desktop` design.
+The **enhancement** design process is when developers begin by deciding the core features and layout for the mobile view, and then "enhance" the application in order to fill out the desktop design.
 
 This will allow you to add features into your app as you scale up with the view port size. This is also known as `mobile first` development. This process more reliably results in a robust mobile view and an equally effective desktop design. 
 
@@ -32,9 +32,9 @@ In short, it's easier to scale up than it is to scale down.
 
 ## Media Queries
 
-In CSS, we can use `media queries` to help create a `responsive design`.
+In CSS, we can use **media queries** to help create a "responsive design".
 
-A `media query` is a set of CSS rules that will apply to devices based on the viewport size of the device being used to access the page.
+A media query is a set of CSS rules that will apply to devices based on the viewport size of the device being used to access the page.
 
 The syntax for writing a media query looks like the following:
 
@@ -47,7 +47,7 @@ The syntax for writing a media query looks like the following:
 }
 ```
 
-Media queries are defined in CSS by using the `@media` statement. In the parentheses, we can specify the dimensions of the view port that our styles will apply to. The value passed into the parentheses can be referred to as a `break point`. Typically, break points are set with a `min-width` or `max-width` value. Inside the curly braces, we style normally. 
+Media queries are defined in CSS by using the `@media` statement. In the parentheses, we can specify the dimensions of the view port that our styles will apply to. The value passed into the parentheses can be referred to as a **break point**. Typically, break points are set with a `min-width` or `max-width` value. Inside the curly braces, we style normally. 
 
 
 ![break points](images/breakpoints.png)
