@@ -10,7 +10,7 @@ Older websites were not designed with responsive design principles in mind, and 
 
 Nowadays, it is standard practice to ensure that websites are responsive. Some examples of responsive designs can be found here: https://www.awwwards.com/50-examples-of-responsive-web-design.html. 
 
-The reason responsive design is important is because increasing numbers of users are consuming the internet via mobile devices or tablets. There are ~1.2 billion web users world wide, and ~48% of them primarily use the internet on their mobile device. Moreover, being capable of designing responsive sites is a requirement for any front-end developer position.
+The reason responsive design is important is because increasing numbers of users are consuming the internet via mobile devices or tablets. In 2017, there were an estimated 3.5 billion web users world wide, and around 2 billion of them exclusively use the internet on mobile devices. Most importantly, being capable of designing responsive sites is a requirement for any front-end developer position.
 
 When building your application, there are three main devices to develop for. `mobile`, `tablet`, and `desktop`.
 
