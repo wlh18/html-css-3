@@ -59,7 +59,7 @@ Min-width is the value used to declare the minimum width of screen size that the
 ```css
 @media (min-width: 500px) {
     /* Styles will only be applied when view port width is 500px and above */
-    #navbar {
+    body {
         background: orange;
     }
 }
@@ -72,7 +72,7 @@ Max-width is the value used to declare the maximum point of screen width that th
 ```css
 @media (max-width: 500px) {
     /* Styles will only be applied when view port width is 500px and lower */
-    #navbar {
+    body {
         background: orange;
     }
 }
