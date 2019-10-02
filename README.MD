@@ -41,7 +41,7 @@ The syntax for writing a media query looks like the following:
 ```css
 @media (max-width: 500px) {
     /* New Styles To Apply Based On Width */
-    #navbar {
+    body {
         background: tomato;
     }
 }
