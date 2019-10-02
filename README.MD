@@ -113,15 +113,15 @@ Another way to specify waypoints is by using percentages inside of the animation
 
 ```css
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(180deg);
-    }
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  100% {
+      transform: rotate(90deg);
+  }
 }
 ```
 After creating a keyframe animation, the keyframe needs to be applied to the desired selector. 
