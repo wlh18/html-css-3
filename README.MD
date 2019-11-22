@@ -2,6 +2,10 @@
 
 In this lecture we discuss media queries and animations.
 
+## Lecture Slides
+
+https://slides.com/mattbodily/deck-041699
+
 ## Responsive Design
 
 Responsive design is the process of building an application's user interface (UI) to dynamically adjust based on the size of the device being used to access it.
