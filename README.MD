@@ -6,6 +6,28 @@ In this lecture we discuss media queries and animations.
 
 https://slides.com/mattbodily/deck-041699
 
+# Student Learning Objectives 
+
+### Media Queries
+
+* Student can describe why media queries are used
+* Student can use media queries to build a responsive app
+* Student can use `min-width` when creating a breakpoint
+* Student can use `max-width` when creating a breakpoint
+* Student can specify multiple parameters for breakpoint using `and` with min-width and max-width
+
+### Animations
+
+* Student can specify the rules of an animation using `@keyframes`
+* Student can use `from` and `to` to specify specific styles to change with `@keyframes`
+* Student can use percentages to specify specific styles to change with `@keyframes`
+* Student can use `animation-name` on class to specify animation to be used
+* Student can use `animation-duration` on class to specify animation's duration
+* Student can use `animation-iteration-count` on class to specify how many times animation will run
+* Student can use `transition` shorthand property to smoothly transition style changes
+* Student can specify which css class properties `transition` will be applied to.
+* Student can use `refs` to trigger animations in react
+
 ## Responsive Design
 
 Responsive design is the process of building an application's user interface (UI) to dynamically adjust based on the size of the device being used to access it.
