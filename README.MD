@@ -228,3 +228,30 @@ For more information on CSS Transitions, check out MDN's Guide: https://develope
 Additionally, if you're ever struggling with creating a desired effect via CSS, try searching for results from https://css-tricks.com/. It's a fantastic resource for not only CSS, but also HTML, JS, JQuery, and many other front-end technologies. 
 
 Finally, remember that there are a multitude of means of achieving animation effects on a webpage, including scripting with javascript, or relying on libraries and frameworks like React-Spring, React-Motion, or GreenSock. In this guide, we simply focused on using transitions and keyframes within CSS to achieve animation effects. 
+
+
+## Additional Resources
+Most of these will be just MDN or css-tricks because the content isn't inherently complicated, it's just a collection of new syntax and properties students haven't seen yet
+### Media Queries
+- https://css-tricks.com/css-media-queries/ CSS tricks is a very good stop for media query overviews
+- https://css-tricks.com/resolution-specific-stylesheets/ How to designate specific stylesheets for specific screen resolutions
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries (Obviously)
+- https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php - good one-page 'cheat sheet' style of media query syntax
+
+### Animations
+- https://css-tricks.com/almanac/properties/a/animation/ CSS tricks back at it again
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties list of CSS properties that can be animated
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations - goes with the one directly below
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions - difference between animations and transitions
+
+### Pseudo Class Selectors
+- https://css-tricks.com/pseudo-class-selectors/ 3 for 3!
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+### Video Resources
+#### Media Queries
+- https://www.youtube.com/watch?v=5xzaGSYd7jM - pretty good for just media queries but the whole playlist below is recommended for both this and animations
+#### Animations
+- https://www.youtube.com/watch?v=jgw82b5Y2MU&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5 This is a youtube playlist of 13 videos that go in depth on youtube media queries and animations.  It's very good but might be pretty basic or too slow for some
+#### Pseudo Class Selectors
+- https://www.youtube.com/watch?v=0VDx1570X3U - pseudo class video that goes much more in depth than is really necessary
