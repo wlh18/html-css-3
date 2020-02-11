@@ -274,6 +274,7 @@ Most of these will be just MDN or css-tricks because the content isn't inherentl
 ### Articles
 * [Mobile First Design](https://mayvendev.com/blog/mobilefirst) An article on why you should use mobile-first design.
 * [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html) Docs on creating react refs. Refs can be used to more conveniently access elements and apply animations/transitions directly.
+* https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937 Article that goes over some interesting animations/transitions applied with CSS. Raw code is accessible. 
 
 ### Video Resources
 
