@@ -253,6 +253,7 @@ Finally, remember that there are a multitude of means of achieving animation eff
 
 # Additional Resources
 Most of these will be just MDN or css-tricks because the content isn't inherently complicated, it's just a collection of new syntax and properties students haven't seen yet
+
 ### Media Queries
 - https://css-tricks.com/css-media-queries/ CSS tricks is a very good stop for media query overviews
 - https://css-tricks.com/resolution-specific-stylesheets/ How to designate specific stylesheets for specific screen resolutions
@@ -260,6 +261,7 @@ Most of these will be just MDN or css-tricks because the content isn't inherentl
 - https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php - good one-page 'cheat sheet' style of media query syntax
 
 ### Animations
+- 
 - https://css-tricks.com/almanac/properties/a/animation/ CSS tricks back at it again
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties list of CSS properties that can be animated
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations - goes with the one directly below
@@ -269,10 +271,23 @@ Most of these will be just MDN or css-tricks because the content isn't inherentl
 - https://css-tricks.com/pseudo-class-selectors/ 3 for 3!
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
 
+### Articles
+* [Mobile First Design](https://mayvendev.com/blog/mobilefirst) An article on why you should use mobile-first design.
+* [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html) Docs on creating react refs. Refs can be used to more conveniently access elements and apply animations/transitions directly.
+
 ### Video Resources
+
 #### Media Queries
 - https://www.youtube.com/watch?v=5xzaGSYd7jM - pretty good for just media queries but the whole playlist below is recommended for both this and animations
 #### Animations
 - https://www.youtube.com/watch?v=jgw82b5Y2MU&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5 This is a youtube playlist of 13 videos that go in depth on youtube media queries and animations.  It's very good but might be pretty basic or too slow for some
 #### Pseudo Class Selectors
 - https://www.youtube.com/watch?v=0VDx1570X3U - pseudo class video that goes much more in depth than is really necessary
+
+### React-Motion
+This is a react-specific animation library. 
+
+* Repo/docs: https://github.com/chenglou/react-motion
+* Paul Sherman tutorial: https://www.pshrmn.com/tutorials/react/animation/react-motion/
+* \<Motion\> component tutorial (scrimba cast): https://scrimba.com/casts/c67ygAr
+* \<TransitionMotion\> component tutorial (scrimba cast): https://scrimba.com/casts/cdNzpuk
