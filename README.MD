@@ -6,6 +6,29 @@ In this lecture we discuss media queries and animations.
 
 https://slides.com/mattbodily/deck-041699
 
+# Student Learning Objectives 
+
+### Media Queries
+
+* Student can describe why media queries are used
+* Student can use media queries to build a responsive app
+* Student can create a breakpoint with `@media` tags
+* Student can use `min-width` when creating a breakpoint
+* Student can use `max-width` when creating a breakpoint
+* Student can specify multiple parameters for breakpoint using `and` with min-width and max-width
+
+### Animations
+
+* Student can specify the rules of an animation using `@keyframes`
+* Student can use `from` and `to` to specify specific styles to change with `@keyframes`
+* Student can use percentages to specify specific styles to change with `@keyframes`
+* Student can use `animation-name` on class to specify animation to be used
+* Student can use `animation-duration` on class to specify animation's duration
+* Student can use `animation-iteration-count` on class to specify how many times animation will run
+* Student can use `transition` shorthand property to smoothly transition style changes
+* Student can specify which css class properties `transition` will be applied to.
+* Student can use `refs` to trigger animations in react
+
 ## Responsive Design
 
 Responsive design is the process of building an application's user interface (UI) to dynamically adjust based on the size of the device being used to access it.
@@ -53,6 +76,14 @@ The syntax for writing a media query looks like the following:
 
 Media queries are defined in CSS by using the `@media` statement. In the parentheses, we can specify the dimensions of the view port that our styles will apply to. The value passed into the parentheses can be referred to as a **break point**. Typically, break points are set with a `min-width` or `max-width` value. Inside the curly braces, we style normally. 
 
+### Other Uses
+
+Media queries can be implemented in CSS sheets themselves as seen above, as well as in the link to a specific stylesheet as seen below
+```HTML 
+<link rel='stylesheet' media='all' href='normal.css' />
+<link rel='stylesheet' media='print' href='print.css' />
+<link rel='stylesheet' media='screen and (min-width: 701px)' href='medium.css' />
+```
 
 ![break points](images/breakpoints.png)
 
@@ -229,29 +260,39 @@ Additionally, if you're ever struggling with creating a desired effect via CSS, 
 
 Finally, remember that there are a multitude of means of achieving animation effects on a webpage, including scripting with javascript, or relying on libraries and frameworks like React-Spring, React-Motion, or GreenSock. In this guide, we simply focused on using transitions and keyframes within CSS to achieve animation effects. 
 
-
-## Additional Resources
+# Additional Resources
 Most of these will be just MDN or css-tricks because the content isn't inherently complicated, it's just a collection of new syntax and properties students haven't seen yet
+
 ### Media Queries
-- https://css-tricks.com/css-media-queries/ CSS tricks is a very good stop for media query overviews
-- https://css-tricks.com/resolution-specific-stylesheets/ How to designate specific stylesheets for specific screen resolutions
-- https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries (Obviously)
-- https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php - good one-page 'cheat sheet' style of media query syntax
+- [CSS tricks is a very good stop for media query overviews](https://css-tricks.com/css-media-queries/ )
+- [How to designate specific stylesheets for specific screen resolutions](https://css-tricks.com/resolution-specific-stylesheets/ )
+- [Obligatory MDN article (MDN is just that good)](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+- [Good one-page 'cheat sheet' style of media query syntax](https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php)
 
 ### Animations
-- https://css-tricks.com/almanac/properties/a/animation/ CSS tricks back at it again
-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties list of CSS properties that can be animated
-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations - goes with the one directly below
-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions - difference between animations and transitions
+- [ CSS tricks back at it again](https://css-tricks.com/almanac/properties/a/animation/)
+- [ List of CSS properties that can be animated](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+- [MDN Animations page](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations) and [MDN Transitions page](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions) - good for learning the difference between the two and when to use one or the other
 
 ### Pseudo Class Selectors
-- https://css-tricks.com/pseudo-class-selectors/ 3 for 3!
-- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+- [CSS Tricks 3 for 3!](https://css-tricks.com/pseudo-class-selectors/)
+- [MDN Pseudo Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+
+### Articles
+* [Mobile First Design](https://mayvendev.com/blog/mobilefirst) An article on why you should use mobile-first design.
+* [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html) Docs on creating react refs. Refs can be used to more conveniently access elements and apply animations/transitions directly.
+* [Article that goes over some interesting animations/transitions applied with CSS.](https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937) Raw code is accessible.
 
 ### Video Resources
-#### Media Queries
-- https://www.youtube.com/watch?v=5xzaGSYd7jM - pretty good for just media queries but the whole playlist below is recommended for both this and animations
-#### Animations
-- https://www.youtube.com/watch?v=jgw82b5Y2MU&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5 This is a youtube playlist of 13 videos that go in depth on youtube media queries and animations.  It's very good but might be pretty basic or too slow for some
-#### Pseudo Class Selectors
-- https://www.youtube.com/watch?v=0VDx1570X3U - pseudo class video that goes much more in depth than is really necessary
+
+- [Media Queries](https://www.youtube.com/watch?v=5xzaGSYd7jM) - pretty good for just media queries but the whole playlist below is recommended for both this and animations
+- [CSS Animation Playlist](https://www.youtube.com/watch?v=jgw82b5Y2MU&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5) This is a youtube playlist of 13 videos that go in depth on youtube media queries and animations.  It's very good but might be pretty basic or too slow for some
+- [Pseudo Class Selectors](https://www.youtube.com/watch?v=0VDx1570X3U) - pseudo class video that goes much more in depth than is really necessary
+
+### React-Motion
+This is a react-specific animation library. 
+
+* Repo/docs: https://github.com/chenglou/react-motion
+* Paul Sherman tutorial: https://www.pshrmn.com/tutorials/react/animation/react-motion/
+* \<Motion\> component tutorial (scrimba cast): https://scrimba.com/casts/c67ygAr
+* \<TransitionMotion\> component tutorial (scrimba cast): https://scrimba.com/casts/cdNzpuk
