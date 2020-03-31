@@ -1,12 +1,12 @@
-# HTML CSS THREE
+# HTML CSS 3
 
 In this lecture we discuss media queries and animations.
 
-## Lecture Slides
+Lecture Slides: https://slides.com/dmweb/copy-of-html-css-three
 
-https://slides.com/mattbodily/deck-041699
+Afternoon Project: https://github.com/DevMountain/media-queries-afternoon
 
-# Student Learning Objectives 
+## Student Learning Objectives 
 
 ### Media Queries
 
